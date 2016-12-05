@@ -75,6 +75,16 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/lib64/hw/audio.a2dp.default.so:system/lib64/hw/audio.a2dp.default.so \
 	$(LOCAL_PATH)/proprietary/system/lib64/hw/audio.primary.default.so:system/lib64/hw/audio.primary.default.so \
 	$(LOCAL_PATH)/proprietary/system/lib64/hw/gralloc.hi3650.so:system/lib64/hw/gralloc.hi3650.so \
+	$(LOCAL_PATH)/proprietary/system/global/virtualNets-conf.xml:system/global/virtualNets-conf.xml \
+	$(LOCAL_PATH)/proprietary/system/global/version.txt:system/global/version.txt \
+	$(LOCAL_PATH)/proprietary/system/global/voicemail-conf.xml:system/global/voicemail-conf.xml \
+	$(LOCAL_PATH)/proprietary/system/global/apns-conf.xml:system/global/apns-conf.xml \
+	$(LOCAL_PATH)/proprietary/system/global/globalMatchs-conf.xml:system/global/globalMatchs-conf.xml \
+	$(LOCAL_PATH)/proprietary/system/global/globalAutoAdapt-conf.xml:system/global/globalAutoAdapt-conf.xml \
+	$(LOCAL_PATH)/proprietary/system/global/apns-conf-nolte.xml:system/global/apns-conf-nolte.xml \
+	$(LOCAL_PATH)/proprietary/system/global/ons/ons.bin:system/global/ons/ons.bin \
+	$(LOCAL_PATH)/proprietary/system/global/xml/hw_defaults.xml:system/global/xml/hw_defaults.xml \
+	$(LOCAL_PATH)/proprietary/system/global/xml/mccTable_V2.xml:system/global/xml/mccTable_V2.xml \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
 	$(LOCAL_PATH)/proprietary/system/framework/framework-res-hwext.apk:system/framework/framework-res-hwext.apk \
 	$(LOCAL_PATH)/proprietary/system/framework/HWJNIFLPLocation.jar:system/framework/HWJNIFLPLocation.jar \
@@ -109,6 +119,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/framework/oat/arm64/com.gsma.services.nfc.odex:system/framework/oat/arm64/com.gsma.services.nfc.odex \
 	$(LOCAL_PATH)/proprietary/system/framework/oat/arm64/com.android.future.usb.accessory.odex:system/framework/oat/arm64/com.android.future.usb.accessory.odex \
 	$(LOCAL_PATH)/proprietary/system/framework/oat/arm64/com.android.mediadrm.signer.odex:system/framework/oat/arm64/com.android.mediadrm.signer.odex \
+	$(LOCAL_PATH)/proprietary/system/delapp/HwCompass/HwCompass.apk:system/delapp/HwCompass/HwCompass.apk \
 	$(LOCAL_PATH)/proprietary/system/etc/criticalpro.xml:system/etc/criticalpro.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
 	$(LOCAL_PATH)/proprietary/system/etc/gps.conf:system/etc/gps.conf \
@@ -147,7 +158,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/reader.conf:system/etc/reader.conf \
 	$(LOCAL_PATH)/proprietary/system/etc/gps47531config_cl_beta.xml:system/etc/gps47531config_cl_beta.xml \
-	$(LOCAL_PATH)/proprietary/system/etc/NOTICE.html.gz:system/etc/NOTICE.html.gz \
 	$(LOCAL_PATH)/proprietary/system/etc/factory_modem.cfg:system/etc/factory_modem.cfg \
 	$(LOCAL_PATH)/proprietary/system/etc/jankbdcfg.json:system/etc/jankbdcfg.json \
 	$(LOCAL_PATH)/proprietary/system/etc/libnfc_nxp_next.conf:system/etc/libnfc_nxp_next.conf \
@@ -1442,6 +1452,101 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/etc/facerecognition/face_detect_classifiers/CAMERA_HAAR_Weight_old.dat:system/etc/facerecognition/face_detect_classifiers/CAMERA_HAAR_Weight_old.dat \
 	$(LOCAL_PATH)/proprietary/system/etc/preferred-apps/google.xml:system/etc/preferred-apps/google.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/etc/permissions/android.hardware.telephony.cdma.xml:system/hw_oem/NXT-AL10/etc/permissions/android.hardware.telephony.cdma.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/xml/DelAPKInstallList.txt:system/hw_oem/NXT-AL10/xml/DelAPKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/xml/uc_config.xml:system/hw_oem/NXT-AL10/xml/uc_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/xml/unstall_apk.xml:system/hw_oem/NXT-AL10/xml/unstall_apk.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/xml/hw_ims_config.xml:system/hw_oem/NXT-AL10/xml/hw_ims_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/xml/hw_defaults.xml:system/hw_oem/NXT-AL10/xml/hw_defaults.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/xml/hw_launcher_default_config.xml:system/hw_oem/NXT-AL10/xml/hw_launcher_default_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/xml/5x5/hw_launcher_default_workspace_all.xml:system/hw_oem/NXT-AL10/xml/5x5/hw_launcher_default_workspace_all.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-AL10/prop/local.prop:system/hw_oem/NXT-AL10/prop/local.prop \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/etc/permissions/android.hardware.telephony.cdma.xml:system/hw_oem/NXT-CL00/etc/permissions/android.hardware.telephony.cdma.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/xml/DelAPKInstallList.txt:system/hw_oem/NXT-CL00/xml/DelAPKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/xml/uc_config.xml:system/hw_oem/NXT-CL00/xml/uc_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/xml/unstall_apk.xml:system/hw_oem/NXT-CL00/xml/unstall_apk.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/xml/hw_defaults.xml:system/hw_oem/NXT-CL00/xml/hw_defaults.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/xml/hw_launcher_default_config.xml:system/hw_oem/NXT-CL00/xml/hw_launcher_default_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/xml/mms_config.xml:system/hw_oem/NXT-CL00/xml/mms_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/xml/5x5/hw_launcher_default_workspace_all.xml:system/hw_oem/NXT-CL00/xml/5x5/hw_launcher_default_workspace_all.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-CL00/prop/local.prop:system/hw_oem/NXT-CL00/prop/local.prop \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/xml/DelAPKInstallList.txt:system/hw_oem/NXT-DL00/xml/DelAPKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/xml/uc_config.xml:system/hw_oem/NXT-DL00/xml/uc_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/xml/unstall_apk.xml:system/hw_oem/NXT-DL00/xml/unstall_apk.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/xml/hw_ims_config.xml:system/hw_oem/NXT-DL00/xml/hw_ims_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/xml/hw_defaults.xml:system/hw_oem/NXT-DL00/xml/hw_defaults.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/xml/hw_launcher_default_config.xml:system/hw_oem/NXT-DL00/xml/hw_launcher_default_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/xml/5x5/hw_launcher_default_workspace_all.xml:system/hw_oem/NXT-DL00/xml/5x5/hw_launcher_default_workspace_all.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-DL00/prop/local.prop:system/hw_oem/NXT-DL00/prop/local.prop \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/DelAPKInstallList.txt:system/hw_oem/NXT-TL00/xml/DelAPKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/uc_config.xml:system/hw_oem/NXT-TL00/xml/uc_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/hw_launcher_load_icon.xml:system/hw_oem/NXT-TL00/xml/hw_launcher_load_icon.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/unstall_apk.xml:system/hw_oem/NXT-TL00/xml/unstall_apk.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/hw_ims_config.xml:system/hw_oem/NXT-TL00/xml/hw_ims_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/hw_defaults.xml:system/hw_oem/NXT-TL00/xml/hw_defaults.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/hw_launcher_default_config.xml:system/hw_oem/NXT-TL00/xml/hw_launcher_default_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/xml/5x5/hw_launcher_default_workspace_all.xml:system/hw_oem/NXT-TL00/xml/5x5/hw_launcher_default_workspace_all.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-TL00/prop/local.prop:system/hw_oem/NXT-TL00/prop/local.prop \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L09/xml/DelAPKInstallList.txt:system/hw_oem/NXT-L09/xml/DelAPKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L09/xml/unstall_apk.xml:system/hw_oem/NXT-L09/xml/unstall_apk.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L09/xml/hw_defaults.xml:system/hw_oem/NXT-L09/xml/hw_defaults.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L09/xml/hw_launcher_default_config.xml:system/hw_oem/NXT-L09/xml/hw_launcher_default_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L09/xml/APKInstallList.txt:system/hw_oem/NXT-L09/xml/APKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L09/xml/5x5/hw_launcher_default_workspace.xml:system/hw_oem/NXT-L09/xml/5x5/hw_launcher_default_workspace.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L09/prop/local.prop:system/hw_oem/NXT-L09/prop/local.prop \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L29/xml/DelAPKInstallList.txt:system/hw_oem/NXT-L29/xml/DelAPKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L29/xml/unstall_apk.xml:system/hw_oem/NXT-L29/xml/unstall_apk.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L29/xml/hw_defaults.xml:system/hw_oem/NXT-L29/xml/hw_defaults.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L29/xml/hw_launcher_default_config.xml:system/hw_oem/NXT-L29/xml/hw_launcher_default_config.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L29/xml/APKInstallList.txt:system/hw_oem/NXT-L29/xml/APKInstallList.txt \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L29/xml/5x5/hw_launcher_default_workspace.xml:system/hw_oem/NXT-L29/xml/5x5/hw_launcher_default_workspace.xml \
+	$(LOCAL_PATH)/proprietary/system/hw_oem/NXT-L29/prop/local.prop:system/hw_oem/NXT-L29/prop/local.prop \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V1.bin:system/fpgaice40/GRACE-CLG-V1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA-TULG-V1.txt:system/fpgaice40/CARRERA-TULG-V1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/PLK-TL00H-VA.txt:system/fpgaice40/PLK-TL00H-VA.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/FRD-L04-V3.bin:system/fpgaice40/FRD-L04-V3.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V4.bin:system/fpgaice40/GRACE-CLG-V4.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V1.bin:system/fpgaice40/GRACE-TUGL-V1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA_CLG_V1.txt:system/fpgaice40/CARRERA_CLG_V1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/VIENNA-TUGL-VN1.txt:system/fpgaice40/VIENNA-TUGL-VN1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/LB_ALL_V1.txt:system/fpgaice40/LB_ALL_V1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA-TULG-V3.txt:system/fpgaice40/CARRERA-TULG-V3.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA_CLG_V1.bin:system/fpgaice40/CARRERA_CLG_V1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V4.txt:system/fpgaice40/GRACE-TUGL-V4.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/VIENNA-TUCL-VN1.txt:system/fpgaice40/VIENNA-TUCL-VN1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V0.bin:system/fpgaice40/GRACE-TUGL-V0.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/VIENNA-TUCL-V1.txt:system/fpgaice40/VIENNA-TUCL-V1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-VN1.bin:system/fpgaice40/GRACE-TUGL-VN1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA_CLG_V3.txt:system/fpgaice40/CARRERA_CLG_V3.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V0.txt:system/fpgaice40/GRACE-CLG-V0.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-VN1.txt:system/fpgaice40/GRACE-CLG-VN1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V3.txt:system/fpgaice40/GRACE-CLG-V3.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/PLK-TL00H-VA.bin:system/fpgaice40/PLK-TL00H-VA.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V3.bin:system/fpgaice40/GRACE-CLG-V3.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/FRD-L04-V2.bin:system/fpgaice40/FRD-L04-V2.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V3.bin:system/fpgaice40/GRACE-TUGL-V3.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/FRD-L04-V3.txt:system/fpgaice40/FRD-L04-V3.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V0.bin:system/fpgaice40/GRACE-CLG-V0.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/FRD-L04-V2.txt:system/fpgaice40/FRD-L04-V2.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/VIENNA-TUGL-VN1.bin:system/fpgaice40/VIENNA-TUGL-VN1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/LB_ALL_V1.bin:system/fpgaice40/LB_ALL_V1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-VN1.bin:system/fpgaice40/GRACE-CLG-VN1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/FRD-L09-V2.txt:system/fpgaice40/FRD-L09-V2.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/VIENNA-TUCL-VN1.bin:system/fpgaice40/VIENNA-TUCL-VN1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V4ANDVN1.txt:system/fpgaice40/GRACE-TUGL-V4ANDVN1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-VN1.txt:system/fpgaice40/GRACE-TUGL-VN1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V3.txt:system/fpgaice40/GRACE-TUGL-V3.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V1.txt:system/fpgaice40/GRACE-CLG-V1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V1.txt:system/fpgaice40/GRACE-TUGL-V1.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V0.txt:system/fpgaice40/GRACE-TUGL-V0.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA-TULG-V1.bin:system/fpgaice40/CARRERA-TULG-V1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V4.bin:system/fpgaice40/GRACE-TUGL-V4.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-CLG-V4.txt:system/fpgaice40/GRACE-CLG-V4.txt \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/GRACE-TUGL-V4ANDVN1.bin:system/fpgaice40/GRACE-TUGL-V4ANDVN1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA-TULG-V3.bin:system/fpgaice40/CARRERA-TULG-V3.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/FRD-L09-V2.bin:system/fpgaice40/FRD-L09-V2.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/VIENNA-TUCL-V1.bin:system/fpgaice40/VIENNA-TUCL-V1.bin \
+	$(LOCAL_PATH)/proprietary/system/fpgaice40/CARRERA_CLG_V3.bin:system/fpgaice40/CARRERA_CLG_V3.bin \
 	$(LOCAL_PATH)/proprietary/system/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
 	$(LOCAL_PATH)/proprietary/system/vendor/lib64/libOpenCL.so.1:system/vendor/lib64/libOpenCL.so.1 \
 	$(LOCAL_PATH)/proprietary/system/vendor/lib64/libbt-vendor-hisi.so:system/vendor/lib64/libbt-vendor-hisi.so \
@@ -1619,4 +1724,4 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/bin/isplogcat:system/bin/isplogcat
 
 
-# Total 1603 files added on 2016-12-04T15:50:09.699166 UTC
+# Total 1708 files added on 2016-12-05T21:05:11.149405 UTC
